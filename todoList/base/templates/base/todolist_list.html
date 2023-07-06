@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>My Django Template</title>
+</head>
+<body>
+    <h1>Data from MyTable:</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item.column1 }}</td>
+                <td>{{ item.column2 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
